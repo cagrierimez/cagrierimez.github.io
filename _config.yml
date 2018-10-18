@@ -16,7 +16,7 @@ baseurl: ""
 # Name of website
 title: Çağrı Erimez
 # Short description of your site
-description:  Full Stack Developer
+description: Full Stack Developer
 
 # --- Navigation bar options --- #
 
@@ -77,11 +77,11 @@ social-network-links:
   twitter: cagrierimez
 #  reddit: yourname
 #  google-plus: +DeanAttali
- linkedin: cagrierimez
+#  linkedin: cagrierimez
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
- instagram: cagrierimez
+#  instagram: cagrierimez
 #  youtube: user/deanat78
 #  spotify: yourname
 #  telephone: +14159998888
