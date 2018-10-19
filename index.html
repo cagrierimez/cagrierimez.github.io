@@ -1,9 +1,16 @@
 ---
 layout: page
-title: My website
-subtitle: This is where I will tell my friends way too much about me
+<!-- title: My website
+subtitle: This is where I will tell my friends way too much about me -->
 use-site-title: true
 ---
+
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
@@ -29,13 +36,13 @@ use-site-title: true
   {% for post in paginator.posts %}
   <article class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
-	  <h2 class="post-title">{{ post.title }}</h2>
+      <h2 class="post-title">{{ post.title }}</h2>
 
-	  {% if post.subtitle %}
-	  <h3 class="post-subtitle">
-	    {{ post.subtitle }}
-	  </h3>
-	  {% endif %}
+      {% if post.subtitle %}
+      <h3 class="post-subtitle">
+        {{ post.subtitle }}
+      </h3>
+      {% endif %}
     </a>
 
     <p class="post-meta">
@@ -54,7 +61,7 @@ use-site-title: true
         {{ post.excerpt | strip_html | xml_escape | truncatewords: site.excerpt_length }}
         {% assign excerpt_word_count = post.excerpt | number_of_words %}
         {% if post.content != post.excerpt or excerpt_word_count > site.excerpt_length %}
-          <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Read&nbsp;More]</a>
+        <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Read&nbsp;More]</a>
         {% endif %}
       </div>
     </div>
@@ -67,12 +74,12 @@ use-site-title: true
       <a href="{{ site.baseurl }}/tags#{{- tag -}}">{{- tag -}}</a>
       {% endfor %}
       {% else %}
-        {{ post.tags | join: ", " }}
+      {{ post.tags | join: ", " }}
       {% endif %}
     </div>
     {% endif %}
 
-   </article>
+  </article>
   {% endfor %}
 </div>
 
