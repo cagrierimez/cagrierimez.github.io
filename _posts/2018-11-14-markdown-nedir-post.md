@@ -27,7 +27,7 @@ Markdown'u GitHub'un çoğu yerinde kullanabilirsiniz:
 - Sorunlar ve Pull İsteklerindeki Yorumlar
 - Files with the .md or .markdown extension
 
-### KUllanım Şekli
+### Kullanım Şekli
 
 #### Headers
 
@@ -51,7 +51,7 @@ _You **can** combine them_
 
 #### Lists
 
-##### Unordered
+#### Unordered
 
 ~~~
 * Item 1
@@ -60,7 +60,7 @@ _You **can** combine them_
   * Item 2b
   ~~~
 
-  ##### Ordered
+   #### Ordered
   ~~~
   1. Item 1
 1. Item 2
@@ -69,19 +69,19 @@ _You **can** combine them_
    1. Item 3b
    ~~~
 
-   ##### Images
+   #### Images
    ~~~
    ![GitHub Logo](/images/logo.png)
 Format: ![Alt Text](url)
    ~~~
 
-   ##### Links
+   #### Links
    ~~~
    http://github.com - automatic!
 [GitHub](http://github.com)
    ~~~
 
-   ##### Blockquotes
+   #### Blockquotes
    ~~~
    As Kanye West said:
 
@@ -89,20 +89,13 @@ Format: ![Alt Text](url)
 > the present is our past.
    ~~~
 
-   ##### Inline code
+   #### Inline code
    ~~~
    I think you should use an
 `<addr>` element here instead.
    ~~~
 
-Here's a useless table:
 
-| Number | Next number | Previous number |
-| :------ |:--- | :--- |
-| Five | Six | Four |
-| Ten | Eleven | Nine |
-| Seven | Eight | Six |
-| Two | Three | One |
 
 
 
