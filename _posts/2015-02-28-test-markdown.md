@@ -1,73 +1,96 @@
 ---
 layout: post
-title: Test markdown
-subtitle: Each post also has a subtitle
+title: Markdown Nedir ?
+subtitle:
 gh-repo: daattali/beautiful-jekyll
 gh-badge: [star, fork, follow]
-tags: [test]
+tags: [markdown,genel,gist]
 ---
 
-You can write regular [markdown](http://markdowntutorial.com/) here and Jekyll will automatically convert it to a nice webpage.  I strongly encourage you to [take 5 minutes to learn how to write in markdown](http://markdowntutorial.com/) - it'll teach you how to transform regular text into bold/italics/headings/tables/etc.
-
-**Here is some bold text**
-
-## Here is a secondary heading
-
-Here's a useless table:
-
-| Number | Next number | Previous number |
-| :------ |:--- | :--- |
-| Five | Six | Four |
-| Ten | Eleven | Nine |
-| Seven | Eight | Six |
-| Two | Three | One |
+[Markdown](http://markdowntutorial.com/) , GitHub platformunda tüm yazı biçimlerini şekillendirmek için hafif ve kullanımı kolay bir sözdizimidir.
 
 
-How about a yummy crepe?
+**Neler Öğreneceğiz:**
+- Markdown formatı nasıl şekillendirilmiş ortak düzenleme yapmayı kolaylaştırır?
+- Markdown, geleneksel biçimlendirme yaklaşımlarından nasıl farklıdır?
+- Metni biçimlendirmek için Markdown nasıl kullanılır?
+- GitHub’un otomatik Markdown oluşturma özelliği nasıl kullanılır?
+- GitHub’un benzersiz Markdown uzantıları nasıl uygulanır?
 
-![Crepe](http://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg)
 
-Here's a code chunk:
+## Markdown Nedir ? 
+
+[Markdown](http://markdowntutorial.com/), web üzerinde metnin stilini oluşturmanın bir yoludur. Belgenin ekranını kontrol edersiniz; kelimeleri kalın veya italik olarak biçimlendirmek, resim eklemek ve listeler oluşturmak, Markdown ile yapabileceğimiz şeylerden sadece birkaçıdır. Çoğunlukla, Markdown, # veya * gibi atılan birkaç alfabetik olmayan karakter içeren normal bir metindir.
+
+Markdown'u GitHub'un çoğu yerinde kullanabilirsiniz:
+- Gist
+- Sorunlar ve Pull İsteklerindeki Yorumlar
+- Files with the .md or .markdown extension
+
+### KUllanım Şekli
+
+#### Headers
 
 ~~~
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
+# This is an <h1> tag
+## This is an <h2> tag
+###### This is an <h6> tag
 ~~~
 
-And here is the same code with syntax highlighting:
+#### Bold Ve İtalic
 
-```javascript
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
-```
+~~~
+*This text will be italic*
+_This will also be italic_
 
-And here is the same code yet again but with line numbers:
+**This text will be bold**
+__This will also be bold__
 
-{% highlight javascript linenos %}
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
-{% endhighlight %}
+_You **can** combine them_
+~~~
 
-## Boxes
-You can add notification, warning and error boxes like this:
+#### Lists
 
-### Notification
+##### Unordered
 
-{: .box-note}
-**Note:** This is a notification box.
+~~~
+* Item 1
+* Item 2
+  * Item 2a
+  * Item 2b
+  ~~~
 
-### Warning
+  ##### Ordered
+  ~~~
+  1. Item 1
+1. Item 2
+1. Item 3
+   1. Item 3a
+   1. Item 3b
+   ~~~
 
-{: .box-warning}
-**Warning:** This is a warning box.
+   ##### Images
+   ~~~
+   ![GitHub Logo](/images/logo.png)
+Format: ![Alt Text](url)
+   ~~~
 
-### Error
+   ##### Links
+   ~~~
+   http://github.com - automatic!
+[GitHub](http://github.com)
+   ~~~
 
-{: .box-error}
-**Error:** This is an error box.
+   ##### Blockquotes
+   ~~~
+   As Kanye West said:
+
+> We're living the future so
+> the present is our past.
+   ~~~
+
+   ##### Inline code
+   ~~~
+   I think you should use an
+`<addr>` element here instead.
+   ~~~
