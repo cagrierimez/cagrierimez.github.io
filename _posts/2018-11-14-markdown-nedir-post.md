@@ -51,7 +51,7 @@ _You **can** combine them_
 
 #### Lists
 
-#### Unordered
+##### Unordered
 
 ~~~
 * Item 1
@@ -60,7 +60,7 @@ _You **can** combine them_
   * Item 2b
   ~~~
 
-   #### Ordered
+   ##### Ordered
   ~~~
   1. Item 1
 1. Item 2
